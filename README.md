@@ -1,10 +1,9 @@
 # Predicting 3D genome folding from DNA sequence and ATAC-Seq data
 #### Author: Lichirui Zhang (lz2627)
 ## Project Introduction
-In this project, we reproduced the paper, titled [“Akita, a CNN model for predicting 3D genome folding from DNA sequence.”](https://www.nature.com/articles/s41592-020-0958-x) and re-implemented the Akita Network, which is a convolutional neural network that transforms input DNA sequence into predicted locus-specific genome folding
+In this project, we reproduced the paper, titled [“Akita, a CNN model for predicting 3D genome folding from DNA sequence.”](https://www.nature.com/articles/s41592-020-0958-x) and re-implemented the Akita Network, which is a convolutional neural network that transforms input DNA sequence into predicted locus-specific genome folding, and tried to improve the performance in two ways: (1) leverage ATAC-Seq data, and (2) add Transformer encoder layers. Same as the original paper, we tested the performance on a held-out test dataset.
 ![Network structure](./Figures/akita_architecture.png)
 
-We augmented the model input with ATAC-Seq data, and add additional Transformer encoder layers. Similar to the original paper, we also tested the performance on a held-out test dataset.
 
 ## Experiment Implementation
 ### 1. Construct the Akita Network and reproduce the related experiments
