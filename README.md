@@ -5,8 +5,8 @@ In this project, we reproduced the paper, titled [“Akita, a CNN model for pred
 ![Network structure](./Figures/akita_architecture.png)
 
 ## Experiment Implementation
-### 1. Construct the Akita Network and reproduce the related experiments
-We firstly construct the Akita network and test it on the held-out test dataset. The hyper-parameters are the same as reported in the paper. Small tweaks: replace the residual CNN block with the "pre-activate" residual CNN block.
+### 1. Re-implement the Akita Network and reproduce the related experiments
+We firstly construct the Akita network and test it on the held-out test dataset. The hyper-parameters are the same as reported in the paper. Small tweaks: replace the residual CNN block with the "pre-activation" residual CNN block.
 
 ### 2. Augment the input with ATAC-Seq data
 ATAC-Seq data was concatenated with DNA sequences. All the other settings are the same as step 1. 
