@@ -1,3 +1,4 @@
+# Author: Lichirui Zhang, Columbia University
 import tensorflow as tf
 from tensorflow.keras.layers import Dense, Conv2D, Activation, Dropout, Conv1D, MaxPool1D, BatchNormalization
 from tensorflow_addons.layers import InstanceNormalization
