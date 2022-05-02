@@ -16,7 +16,7 @@ Four Transformer encoder layers were added into the Akita network to help captur
 
 * The jupyter notebook './' contains the three experiments decribed above. 
 * The script './custom_models.py' contains our own implementations of the models/modules used in the project.
-* The directory './Datasets' contains all the datasets used in the project.
+* The directory './Datasets' contains all the datasets used in the project. './Datasets/get_data.sh' are used to get train, validation, test DNA sequences and Hi-C maps. './Datasets/Sample_0902.bed' contains ATAC-Seq reads.
 * The directory './Figures' contains related figures such as training processes, model architecture inllustrations etc.
 
 ## Project Dependencies
