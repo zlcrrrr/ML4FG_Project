@@ -15,9 +15,10 @@ ATAC-Seq data was concatenated with DNA sequences. All the other settings are th
 ### 3. Add Transformer encoder layers
 Four Transformer encoder layers were added into the Akita network to help capture the long-range relationship. The encoder layers are implemented as the "pre-layernorm" variant to stablize training.
 
-* The jupyter notebook './Notebooks/...' contains the three experiments decribed above. 
-* The script './Notebooks/custom_models.py' contains our own implementations of the models/modules used in the project.
-* The folder './Figures/' contains related figures such as training processes, model architecture inllustrations etc.
+* The jupyter notebook './' contains the three experiments decribed above. 
+* The script './custom_models.py' contains our own implementations of the models/modules used in the project.
+* The directory './Datasets' contains all the datasets used in the project.
+* The directory './Figures' contains related figures such as training processes, model architecture inllustrations etc.
 
 ## Project Dependencies
 * Python 3.6+
