@@ -27,3 +27,42 @@ Four Transformer encoder layers were added into the Akita network to help captur
 * Tensorflow 2.8.0
 * Basenji
 
+# Organization of this directory
+```
+.
+├── Datasets
+│   ├── Sample_0902.bed
+│   └── get_data.sh
+├── Figures
+│   ├── MHA.pdf
+│   ├── Residual_refine_1D:2D.pdf
+│   ├── Transformer_encoder.pdf
+│   ├── akita_architecture.png
+│   ├── baseline_1.png
+│   ├── baseline_2.png
+│   ├── baseline_3.png
+│   ├── model_overall.pdf
+│   ├── orig_1.png
+│   ├── orig_2.png
+│   ├── orig_3.png
+│   ├── re_imp_1.png
+│   ├── re_imp_2.png
+│   ├── re_imp_3.png
+│   ├── residual_downsample_1d.pdf
+│   ├── result.png
+│   ├── transf_1.png
+│   ├── transf_2.png
+│   └── transf_3.png
+├── README.md
+├── checkpoints
+│   ├── 20220501-121443.data-00000-of-00001
+│   ├── 20220501-121443.index
+│   ├── 20220501-211604.data-00000-of-00001
+│   ├── 20220501-211604.index
+│   ├── 20220502-090312.data-00000-of-00001
+│   └── 20220502-090312.index
+├── custom_models.py
+└── project.ipynb
+
+3 directories, 30 files
+```
