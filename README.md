@@ -6,16 +6,16 @@ In this project, we reproduced the paper, titled [“Akita, a CNN model for pred
 
 ## Experiment Implementation
 ### 1. Re-implement the Akita Network and reproduce the related experiments
-We firstly construct the Akita network and test it on the held-out test dataset. The hyper-parameters are the same as reported in the paper. Small tweaks: replace the residual CNN block with the "pre-activation" residual CNN block.
+We firstly construct the Akita network and test it on the held-out test dataset. The hyper-parameters are the same as reported in the paper. Small tweaks: replace residual CNN blocks with "pre-activation" residual CNN blocks.
 
 ### 2. Augment the input with ATAC-Seq data
-ATAC-Seq data was concatenated with DNA sequences. All the other settings are the same as step 1. 
+ATAC-Seq data was concatenated with corresponding DNA sequences. All the other settings are the same as experiment 1. 
 
 ### 3. Add Transformer encoder layers
-Four Transformer encoder layers were added into the Akita network to help capture the long-range relationship. The encoder layers are implemented as the "pre-layernorm" variant to stablize training.
+Four additional Transformer encoder layers were added into the Akita network to help capture the long-range relationship. The encoder layers are implemented as the "pre-layernorm" variant to stablize training.
 
 * The jupyter notebook './project.ipynb' contains the three experiments decribed above. 
-* The script './custom_models.py' contains our own implementations of the models/modules used in the project.
+* The script './custom_models.py' contains our own implementations of the models, modules, and helper functions used in the project.
 * The directory './Datasets' contains all the datasets used in the project. './Datasets/get_data.sh' are used to get train, validation, test DNA sequences and Hi-C maps. './Datasets/Sample_0902.bed' contains ATAC-Seq reads.
 * The directory './Figures' contains related figures such as training processes, model architecture inllustrations etc.
 * The directory './checkpoints' contains trained weights.
