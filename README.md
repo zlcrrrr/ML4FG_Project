@@ -27,7 +27,7 @@ Four additional Transformer encoder layers were added into the Akita network to 
 ## Project Dependencies
 * Python 3.8.13
 * Tensorflow 2.8.0
-* Basenji
+* [Basenji](https://github.com/calico/basenji)
 
 # Organization of this directory
 ```
